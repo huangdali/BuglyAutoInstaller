@@ -266,7 +266,7 @@ public class SysEventReceiver extends BroadcastReceiver {
 
 ```
 
-定时检测更新服务 TimerTaskService
+定时检测更新服务 TimerTaskService  （记得在AndroidManifest.xml中注册，并在特定的时候启动服务）
 
 ```java
 /**
@@ -347,8 +347,9 @@ public class TimerTaskService extends Service {
 
 ```
 
-至此基本实现发布升级后Android终端机自动更新/静默更新
+至此基本实现发布升级后Android终端机自动更新/静默更新（bugly发布升级包就不演示了，跟着官方文档走即可）
 
+完整的demo地址：[https://github.com/huangdali/BuglyAutoInstaller](https://github.com/huangdali/BuglyAutoInstaller)
 
 #### 自建升级后台管理平台+AutoInstaller
 
